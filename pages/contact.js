@@ -7,6 +7,7 @@ import { Mail, Phone, HelpCircle } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Link } from "lucide-react";
 import { useRouter } from "next/router";
+
 export default function Contact() {
   const router = useRouter();
   return (

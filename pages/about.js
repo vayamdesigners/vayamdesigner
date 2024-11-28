@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "motion/react";
 
 export default function About() {
   const [liked, setLiked] = useState([false, false, false, false, false]);
@@ -21,10 +22,16 @@ export default function About() {
           }}
         >
           01
-          <span
+          <motion.span
             className="absolute w-[calc(100%+80px)] h-[10px]  top-1/2 left-[-40px] transform -translate-y-1/2"
             style={{ backgroundColor: "rgb(252,0,0)" }}
-          ></span>
+            initial={{ width: "0%" }} // Initial width
+            animate={{ width: "calc(100% + 80px)" }} // Final width
+            transition={{
+              duration: 2, // Duration of the animation in seconds
+              ease: "easeInOut", // Easing function
+            }}
+          ></motion.span>
         </h1>
         <h1
           className="text-[57px] ml-16 font-semibold "
