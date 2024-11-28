@@ -12,76 +12,52 @@ export default function Contact() {
   return (
     <div className="min-h-screen ">
       <div className="min-h-screen bg-black pt-24 flex flex-col items-center justify-center p-4">
-        <div className="w-full max-w-3xl text-center mb-8">
-          <h1 className="text-3xl font-bold text-white mb-2">Contact Us</h1>
-          <p className="text-slate-300">
-            We use an agile approach to test assumptions and connect with the
-            needs of your audience early and often.
-          </p>
-        </div>
-
-        <div className="w-full max-w-3xl bg-white rounded-lg p-6 mb-8">
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <label
-                  htmlFor="firstName"
-                  className="text-sm font-medium text-gray-700"
-                >
-                  First Name
-                </label>
-                <Input id="firstName" placeholder="John" />
-              </div>
-              <div className="space-y-2">
-                <label
-                  htmlFor="lastName"
-                  className="text-sm font-medium text-gray-700"
-                >
-                  Last Name
-                </label>
-                <Input id="lastName" placeholder="Smith" />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <label
-                  htmlFor="email"
-                  className="text-sm font-medium text-gray-700"
-                >
-                  Your email
-                </label>
-                <Input id="email" type="email" placeholder="john@example.com" />
-              </div>
-              <div className="space-y-2">
-                <label
-                  htmlFor="phone"
-                  className="text-sm font-medium text-gray-700"
-                >
-                  Phone Number
-                </label>
-                <Input id="phone" type="tel" placeholder="    +91 850036976" />
-              </div>
-            </div>
-
+        <form className="w-[50%] mt-10 mx-auto space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-2">
-              <label
-                htmlFor="message"
-                className="text-sm font-medium text-gray-700"
-              >
-                Your message
+              <label htmlFor="firstName" className="text-white">
+                First Name *
               </label>
-              <Textarea id="message" rows={6} />
+              <Input
+                id="firstName"
+                required
+                className="bg-white border-white"
+              />
             </div>
-
-            <Button
-              type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700"
-            >
-              Send message
-            </Button>
-          </form>
-        </div>
+            <div className="space-y-2">
+              <label htmlFor="lastName" className="text-white">
+                Last Name
+              </label>
+              <Input id="lastName" className="bg-white border-white" />
+            </div>
+          </div>
+          <div className="space-y-2">
+            <label htmlFor="email" className="text-white">
+              Email *
+            </label>
+            <Input
+              id="email"
+              type="email"
+              required
+              className="bg-white border-white"
+            />
+          </div>
+          <div className="space-y-2">
+            <label htmlFor="message" className="text-white">
+              Message
+            </label>
+            <Textarea
+              id="message"
+              className="min-h-[150px] bg-white border-white"
+            />
+          </div>
+          <Button
+            type="submit"
+            className="w-full bg-red-600 hover:bg-red-700 text-white font-normal"
+          >
+            Send
+          </Button>
+        </form>
 
         <div className=" mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
           <div className="flex flex-col items-center text-center space-y-2">
