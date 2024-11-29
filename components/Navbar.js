@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 // import Link from "next/link";
 import { Menu, ChevronDown } from "lucide-react";
 
@@ -23,6 +23,11 @@ import {
 
 export default function Navbar() {
   const router = useRouter();
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSheet = () => setIsOpen((prev) => !prev);
+  const closeSheet = () => setIsOpen(false);
 
   // return (
   // <div
@@ -98,62 +103,71 @@ export default function Navbar() {
   //   </div>
   //   <style jsx>{``}</style>
   // </div>
+  const MenuItems = ({ isMobile = false, onItemClick }) => {
+    const router = useRouter();
 
-  const MenuItems = ({ isMobile = false }) => (
-    <>
-      <Link
-        href="/"
-        className={`text-sm border mx-1 px-5 py-2 tracking-widest  font-semibold  ${
-          router.pathname == "/"
-            ? `bg-black text-white`
-            : `bg-white text-black hover:bg-black hover:text-white`
-        } `}
-      >
-        Home
-      </Link>
-      <Link
-        href="/about"
-        className={`text-sm border mx-1 px-5 py-2 tracking-widest  font-semibold  ${
-          router.pathname == "/about"
-            ? `bg-black text-white`
-            : `bg-white text-black hover:bg-black hover:text-white`
-        } `}
-      >
-        About Us
-      </Link>
-      <Link
-        href="/services"
-        className={`text-sm border mx-1 px-5 py-2 tracking-widest  font-semibold  ${
-          router.pathname == "/services"
-            ? `bg-black text-white`
-            : `bg-white text-black hover:bg-black hover:text-white`
-        } `}
-      >
-        Services
-      </Link>
-      <Link
-        href="/works"
-        className={`text-sm border mx-1 px-5 py-2 tracking-widest  font-semibold  ${
-          router.pathname == "/works"
-            ? `bg-black text-white`
-            : `bg-white text-black hover:bg-black hover:text-white`
-        } `}
-      >
-        Works
-      </Link>
-      <Link
-        href="/contact"
-        className={`text-sm border  mx-1 px-5 py-2 tracking-widest  font-semibold  ${
-          router.pathname == "/contact"
-            ? `bg-black text-white`
-            : `bg-white text-black hover:bg-black hover:text-white`
-        } `}
-      >
-        Contact
-      </Link>
-    </>
-  );
+    const handleLinkClick = (href) => {
+      router.push(href);
+      if (onItemClick) {
+        onItemClick(); // Close the Sheet
+      }
+    };
 
+    return (
+      <>
+        <button
+          onClick={() => handleLinkClick("/")}
+          className={`text-sm border mx-1 px-5 py-2 tracking-widest font-semibold ${
+            router.pathname == "/"
+              ? `bg-black text-white`
+              : `bg-white text-black hover:bg-black hover:text-white`
+          }`}
+        >
+          Home
+        </button>
+        <button
+          onClick={() => handleLinkClick("/about")}
+          className={`text-sm border mx-1 px-5 py-2 tracking-widest font-semibold ${
+            router.pathname == "/about"
+              ? `bg-black text-white`
+              : `bg-white text-black hover:bg-black hover:text-white`
+          }`}
+        >
+          About Us
+        </button>
+        <button
+          onClick={() => handleLinkClick("/services")}
+          className={`text-sm border mx-1 px-5 py-2 tracking-widest font-semibold ${
+            router.pathname == "/services"
+              ? `bg-black text-white`
+              : `bg-white text-black hover:bg-black hover:text-white`
+          }`}
+        >
+          Services
+        </button>
+        <button
+          onClick={() => handleLinkClick("/works")}
+          className={`text-sm border mx-1 px-5 py-2 tracking-widest font-semibold ${
+            router.pathname == "/works"
+              ? `bg-black text-white`
+              : `bg-white text-black hover:bg-black hover:text-white`
+          }`}
+        >
+          Works
+        </button>
+        <button
+          onClick={() => handleLinkClick("/contact")}
+          className={`text-sm border mx-1 px-5 py-2 tracking-widest font-semibold ${
+            router.pathname == "/contact"
+              ? `bg-black text-white`
+              : `bg-white text-black hover:bg-black hover:text-white`
+          }`}
+        >
+          Contact
+        </button>
+      </>
+    );
+  };
   return (
     <nav
       className="flex items-center fixed top-0 w-full z-50 justify-between p-4 bg-black"
@@ -169,16 +183,21 @@ export default function Navbar() {
       <div className="hidden md:flex items-center space-x-4">
         <MenuItems />
       </div>
-      <Sheet>
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <Button variant="" size="icon" className="md:hidden">
+          <Button
+            variant=""
+            size="icon"
+            className="md:hidden"
+            onClick={toggleSheet}
+          >
             <Menu className="h-6 w-6" />
             <span className="sr-only">Toggle menu</span>
           </Button>
         </SheetTrigger>
         <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-white">
           <nav className="flex flex-col space-y-4 mt-4">
-            <MenuItems isMobile={true} />
+            <MenuItems isMobile={true} onItemClick={closeSheet} />
           </nav>
         </SheetContent>
       </Sheet>
