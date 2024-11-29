@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen ">
       <div className="min-h-screen bg-black pt-24 flex flex-col items-center justify-center p-4">
-        <form className="w-[50%] mt-10 mx-auto space-y-8">
+        <form className="w-[75%] md:w-[50%] mt-10 mx-auto space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-2">
               <label htmlFor="firstName" className="text-white">

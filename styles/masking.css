@@ -41,6 +41,9 @@
   .video-copy h1 {
     font-size: 60px; /* Font size for larger devices */
   }
+  .video-section {
+    height: 9vh;
+  }
 }
 @media (min-width: 610px) {
   /* Adjust this breakpoint as needed */
