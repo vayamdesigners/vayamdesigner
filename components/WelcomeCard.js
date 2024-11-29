@@ -3,12 +3,12 @@ import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 export default function WelcomeCard() {
   return (
-    <div className="h-[50vh] pt-10 w-[70%] mx-auto">
-      <h1 className="text-5xl text-center heading-font">
+    <div className=" pt-10 w-[100%] sm:w-[75%] mx-auto">
+      <h1 className="text-lg sm:text-3xl md:text-5xl text-center heading-font">
         WELCOME TO VAYAM DESIGNERS
       </h1>
       <p
-        className="  my-10 w-[70%] mx-auto text-sm text-gray-400 text-justify"
+        className="  my-2 w-[90%] sm:my-10 sm:w-[70%] mx-auto text-sm text-gray-400 text-justify"
         data-aos="fade-up"
         data-aos-delay="0"
         data-aos-duration="1000"
@@ -24,7 +24,7 @@ export default function WelcomeCard() {
       </p>
       <div className="flex justify-center  ">
         <button
-          className=" flex text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 "
+          className=" flex text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 mt-5 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 "
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"

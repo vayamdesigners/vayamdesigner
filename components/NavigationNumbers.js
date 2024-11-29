@@ -5,12 +5,12 @@ export default function NavigationNumbers() {
   const router = useRouter();
   return (
     <div
-      className="w-[75%] mx-auto flex justify-evenly "
+      className="w-[100%] sm:px-24 md:px-36  lg:px-48 flex justify-between bg-black py-10 px-3"
       style={{ fontFamily: "futura-lt-w01-book, sans-serif;" }}
     >
-      <div className="mx-8 relative ">
+      <div>
         <h1
-          className="text-[110px] m-0 font-bold cursor-pointer text-gray-200 hover:text-red-600 transition-colors duration-300"
+          className="text-[30px] sm:text-[50px] md:text-[80px] m-0 font-bold cursor-pointer text-gray-200 hover:text-red-600 transition-colors duration-300"
           onClick={() => {
             router.push("/about");
           }}
@@ -23,23 +23,18 @@ export default function NavigationNumbers() {
         >
           01
         </h1>
-
-        <a
-          href="/about"
-          className="underline absolute bottom-2  text-gray-200 tracking-widest"
-        >
-          ABOUT US
-        </a>
+        <p className="text-white underline tracking-widest  text-[10px]  sm:text-[12px] md:text-[20px] ">
+          About Us
+        </p>
       </div>
-
-      <div className="mx-8 relative ">
+      <div>
         <h1
-          className="text-[110px] font-bold  cursor-pointer text-gray-200 hover:text-red-600 transition-colors duration-300"
+          className="text-[30px]  sm:text-[50px] md:text-[80px] m-0 font-bold cursor-pointer text-gray-200 hover:text-red-600 transition-colors duration-300"
           onClick={() => {
             router.push("/services");
           }}
           data-aos="fade-right"
-          data-aos-delay="200"
+          data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="false"
@@ -47,21 +42,18 @@ export default function NavigationNumbers() {
         >
           02
         </h1>
-        <a
-          href="/services"
-          className="mx-2 underline text-gray-200 tracking-widest absolute bottom-2"
-        >
-          OURSERVICES
-        </a>
+        <p className="text-white underline tracking-widest text-[10px] sm:text-[12px] md:text-[20px] ">
+          Our Services
+        </p>
       </div>
-      <div className="mx-8 relative">
+      <div>
         <h1
-          className="text-[110px] m-0 font-bold cursor-pointer text-gray-200 hover:text-red-600 transition-colors duration-300"
+          className="text-[30px]  sm:text-[50px] md:text-[80px] m-0 font-bold cursor-pointer text-gray-200 hover:text-red-600 transition-colors duration-300"
           onClick={() => {
-            router.push("/work");
+            router.push("/works");
           }}
           data-aos="fade-right"
-          data-aos-delay="350"
+          data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="false"
@@ -69,21 +61,18 @@ export default function NavigationNumbers() {
         >
           03
         </h1>
-        <a
-          href="/work"
-          className="mx-2 underline absolute bottom-2 text-gray-200 tracking-widest"
-        >
-          OUR WORK
-        </a>
+        <p className="text-white underline tracking-widest text-[10px] sm:text-[12px] md:text-[20px] ">
+          Our Works
+        </p>
       </div>
-      <div className="mx-8 relative">
+      <div>
         <h1
-          className="text-[110px] m-0 font-bold cursor-pointer text-gray-200 hover:text-red-600 transition-colors duration-300"
+          className="text-[30px] sm:text-[50px] md:text-[80px] m-0 font-bold cursor-pointer text-gray-200 hover:text-red-600 transition-colors duration-300"
           onClick={() => {
             router.push("/contact");
           }}
           data-aos="fade-right"
-          data-aos-delay="500"
+          data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="false"
@@ -91,12 +80,9 @@ export default function NavigationNumbers() {
         >
           04
         </h1>
-        <a
-          href="/contact"
-          className="mx-2 absolute bottom-2 underline text-gray-200 tracking-widest"
-        >
-          CONTACTUS
-        </a>
+        <p className="text-white underline tracking-widest text-[10px] sm:text-[12px] md:text-[20px] ">
+          Contact
+        </p>
       </div>
     </div>
   );

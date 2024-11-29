@@ -12,21 +12,21 @@ export default function About() {
   };
 
   return (
-    <div className="bg-black text-white  pb-24  pt-28 min-h-screen">
+    <div className="bg-black text-white  pb-24  pt-28 min-h-screen min-w-[300px]">
       {" "}
-      <div className="ml-64 mt-10 flex items-center relative">
+      <div className=" mt-5 ml-10 sm:ml-16 md:ml-20 flex items-center relative">
         <h1
-          className="text-[98px] relative "
+          className="text-[50px] sm:text-[60px] md:text-[70px] lg:text-[90px] relative "
           style={{
             fontFamily: "Futura LT W01 Medium",
           }}
         >
           01
           <motion.span
-            className="absolute w-[calc(100%+80px)] h-[10px]  top-1/2 left-[-40px] transform -translate-y-1/2"
+            className="absolute w-[calc(100%+80px)] h-[10px]  top-1/2 left-[-20px] transform -translate-y-1/2"
             style={{ backgroundColor: "rgb(252,0,0)" }}
             initial={{ width: "0%" }} // Initial width
-            animate={{ width: "calc(100% + 80px)" }} // Final width
+            animate={{ width: "calc(100% + 40px)" }} // Final width
             transition={{
               duration: 2, // Duration of the animation in seconds
               ease: "easeInOut", // Easing function
@@ -34,25 +34,27 @@ export default function About() {
           ></motion.span>
         </h1>
         <h1
-          className="text-[57px] ml-16 font-semibold "
+          className="text-[30px] sm:text-[50px] md:text-[70px] lg:text-[90px] ml-10 sm:ml-16 font-semibold "
           style={{ color: "rgb(252,0,0)", fontFamily: "Futura LT W01 Medium" }}
         >
           ABOUT US
         </h1>
       </div>
-      <div className="flex my-10">
-        <div className="w-[50%] bg-white h-[70vh] flex justify-center items-center">
+      <div className="flex flex-col md:flex-row my-5  md:my-10 px-5">
+        <div className="w-[100%] mx-auto bg-white md:w-[50%] h-[50vh] md:h-[70vh] flex justify-center items-center">
           <img src="/wbLogo.png" />
         </div>
         <div
-          className="w-[50%] h-[70vh] mx-5 my-10 text-start"
+          className="w-[100%] md:w-[50%] h-[50vh] md:mx-5 md:h-[70vh] mx-auto my-5 text-center md:text-start"
           style={{
             fontFamily: "Futura LT W01 Medium",
           }}
         >
-          <div className="my-24 mx-10">
-            <h1 className="text-5xl">Get to Know Us</h1>
-            <p className="mx-2 mt-10 w-[80%] text-justify text-lg text-gray-400">
+          <div className="mx-2">
+            <h1 className="text-lg sm:text-xl md:text-4xl lg:text-5xl">
+              Get to Know Us
+            </h1>
+            <p className="mx-2 mt-2 w-[100%] md:mt-10 md:w-[80%] text-justify md:text-justify text-lg text-gray-400">
               We are a unique creative agency for all things visual and digital.
               We specialize in graphic design, photography, and videography,
               offering a wide range of services to meet the diverse needs of
@@ -62,13 +64,13 @@ export default function About() {
         </div>
       </div>
       <div
-        className="pt-10 text-center w-[50%] mx-auto my-10"
+        className="md:pt-10 text-justify md:text-center w-[100%] md:w-[50%] mx-auto my-10"
         style={{
           fontFamily: "Futura LT W01 Medium",
         }}
       >
-        <h1 className="text-5xl my-5">OUR VISION</h1>
-        <p className="text-lg text-gray-400">
+        <h1 className="text-5xl text-center my-5">OUR VISION</h1>
+        <p className="text-lg mx-5 text-gray-400">
           Our mission is to enhance your brand presence and communication
           effectiveness through comprehensive and innovative solutions. Whether
           you need striking visuals, captivating videos, or a dynamic web
@@ -77,26 +79,25 @@ export default function About() {
           crowded marketplace.
         </p>
       </div>
-      <div className="w-[80%] mx-auto flex justify-center  mt-24 ">
+      <div className="w-[100%] md:w-[80%]  pd-2 md:mx-auto flex flex-col md:flex-row justify-center  mt-24 ">
         <div
-          className="w-[50%] mt-24"
+          className="w-[100%] md:w-[50%] md:mt-24"
           style={{
             fontFamily: "Futura LT W01 Medium",
           }}
         >
-          <h1 className="text-5xl font-bold mb-5 mx-auto">
+          <h1 className="text-3xl md:text-5xl text-center font-bold mb-5 mx-auto">
             Our Valued Clients
           </h1>
-          <p className="text-sm text-gray-400 my-2 text-justify  w-[60%] ">
+          <p className="text-sm  md:mx-auto text-gray-400 my-2 mb-5 md:mb-2 text-justify mx-5 md:w-[60%] ">
             Our clients are at the heart of everything we do. We work
             collaboratively with businesses and individuals across various
             industries, creating impactful visual content and design solutions
             to meet their unique needs.
           </p>
         </div>
-        <div className="w-[50%] h-[75vh]">
+        <div className="w-[100%] md:w-[50%] md:h-[75vh] ">
           <div className="flex justify-between">
-            {/* Image 1 */}
             <div className="bg-white w-full mx-1  overflow-hidden cursor-pointer relative">
               <div className="bg-white relative group">
                 <img
@@ -106,7 +107,6 @@ export default function About() {
                 />
                 <div className="absolute inset-0 bg-gray-200 bg-opacity-50 transition-opacity duration-350 opacity-0 group-hover:opacity-100"></div>
 
-                {/* Heart Icon at the bottom */}
                 <div
                   onClick={() => toggleLike(0)}
                   className="absolute bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer transition-all duration-300 opacity-0 group-hover:opacity-100"
@@ -124,7 +124,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Image 2 */}
             <div className="bg-white w-full mx-1 h-full overflow-hidden cursor-pointer relative">
               <div className="bg-white relative group h-full ">
                 <img
@@ -134,7 +133,6 @@ export default function About() {
                 />
                 <div className="absolute inset-0 bg-gray-200 bg-opacity-50 transition-opacity duration-350 opacity-0 group-hover:opacity-100"></div>
 
-                {/* Heart Icon at the bottom */}
                 <div
                   onClick={() => toggleLike(0)}
                   className="absolute bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer transition-all duration-300 opacity-0 group-hover:opacity-100"
@@ -152,7 +150,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Image 3 */}
             <div className="bg-white w-full mx-1  overflow-hidden cursor-pointer relative">
               <div className="bg-white relative group">
                 <img
@@ -162,7 +159,6 @@ export default function About() {
                 />
                 <div className="absolute inset-0 bg-gray-200 bg-opacity-50 transition-opacity duration-350 opacity-0 group-hover:opacity-100"></div>
 
-                {/* Heart Icon at the bottom */}
                 <div
                   onClick={() => toggleLike(0)}
                   className="absolute bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer transition-all duration-300 opacity-0 group-hover:opacity-100"
@@ -181,7 +177,6 @@ export default function About() {
             </div>
           </div>
           <div className="flex justify-between my-2">
-            {/* Image 1 */}
             <div className="bg-white w-full mx-1  overflow-hidden cursor-pointer relative">
               <div className="bg-white relative group">
                 <img
@@ -191,7 +186,6 @@ export default function About() {
                 />
                 <div className="absolute inset-0 bg-gray-200 bg-opacity-50 transition-opacity duration-350 opacity-0 group-hover:opacity-100"></div>
 
-                {/* Heart Icon at the bottom */}
                 <div
                   onClick={() => toggleLike(0)}
                   className="absolute bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer transition-all duration-300 opacity-0 group-hover:opacity-100"
@@ -217,7 +211,6 @@ export default function About() {
                 />
                 <div className="absolute inset-0 bg-gray-200 bg-opacity-50 transition-opacity duration-350 opacity-0 group-hover:opacity-100"></div>
 
-                {/* Heart Icon at the bottom */}
                 <div
                   onClick={() => toggleLike(0)}
                   className="absolute bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer transition-all duration-300 opacity-0 group-hover:opacity-100"
@@ -243,7 +236,6 @@ export default function About() {
                 />
                 <div className="absolute inset-0 bg-gray-200 bg-opacity-50 transition-opacity duration-350 opacity-0 group-hover:opacity-100"></div>
 
-                {/* Heart Icon at the bottom */}
                 <div
                   onClick={() => toggleLike(0)}
                   className="absolute bottom-4 left-1/2 transform -translate-x-1/2 cursor-pointer transition-all duration-300 opacity-0 group-hover:opacity-100"
@@ -260,8 +252,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-
-            {/* Image 3 */}
           </div>
         </div>
       </div>
