@@ -21,7 +21,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export default function Navbar() {
+export default function Navbar({ isDivVisible }) {
   const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -176,9 +176,11 @@ export default function Navbar() {
       }}
     >
       <div className="flex items-center">
-        <Link href="/" className="text-4xl font-bold">
-          <img src="/l.png" className="h-[50px] " />
-        </Link>
+        {!isDivVisible && (
+          <Link href="/" className="text-4xl font-bold">
+            <img src="/l.png" className="h-[50px] " />
+          </Link>
+        )}
       </div>
       <div className="hidden md:flex items-center space-x-4">
         <MenuItems />

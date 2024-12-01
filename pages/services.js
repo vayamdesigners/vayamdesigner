@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "motion/react";
+import { useRouter } from "next/router";
 
 export default function Services() {
+  const router = useRouter();
   return (
     <div
       className="bg-black text-white  pb-24  pt-28  min-w-[300px]"
@@ -61,12 +63,12 @@ export default function Services() {
               <li
                 className="text-[20px]   md:text-[20px]  lg:text-[40px]  sm:text-[30px]"
                 style={{ fontFamily: "futura-lt-w01-book, sans-serif;" }}
-                // data-aos="fade-up"
-                // data-aos-delay="10"
-                // data-aos-duration="1000"
-                // data-aos-easing="ease-in-out"
-                // data-aos-mirror="false"
-                // data-aos-once="true"
+                data-aos="fade-up"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="false"
+                data-aos-once="true"
               >
                 Commercial Photography
               </li>
@@ -126,6 +128,9 @@ export default function Services() {
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="false"
                 data-aos-once="true"
+                onClick={() => {
+                  router.push("/photographyWork");
+                }}
               >
                 OUR WORKS
               </button>
@@ -224,6 +229,9 @@ export default function Services() {
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="false"
                 data-aos-once="true"
+                onClick={() => {
+                  router.push("/VideographyWork");
+                }}
               >
                 OUR WORKS
               </button>
@@ -322,6 +330,9 @@ export default function Services() {
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="false"
                 data-aos-once="true"
+                onClick={() => {
+                  router.push("/GraphicDesignWork");
+                }}
               >
                 OUR WORKS
               </button>

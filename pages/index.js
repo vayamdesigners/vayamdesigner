@@ -7,7 +7,7 @@ import TextMaskVideo from "@/components/VIdeoText";
 import WelcomeCard from "@/components/WelcomeCard";
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
-export default function Index() {
+export default function Index({ divRef }) {
   const [flag, setFlag] = useState(false);
   useEffect(() => {
     if (!flag) {
@@ -40,7 +40,7 @@ export default function Index() {
 
   return (
     <div className="bg-black text-white ">
-      <Hero />
+      <Hero divRef={divRef} />
       <WelcomeCard />
 
       {flag && (

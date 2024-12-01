@@ -47,7 +47,7 @@ export default function Work() {
             PHOTOGRAPHY
           </p>
           <div className="">
-            <span className="text-gray-200 flex  cursor-pointer viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 ">
+            <span className="text-gray-200 flex  cursor-pointer hover:text-red-500 viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 ">
               V I E W <MdOutlineKeyboardArrowRight size={20} />
             </span>
           </div>
@@ -72,7 +72,7 @@ export default function Work() {
             VIDEOGRAPHY
           </p>
           <div className="">
-            <span className="text-gray-200 flex  cursor-pointer viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 ">
+            <span className="text-gray-200 flex  cursor-pointer hover:text-red-500 viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 ">
               V I E W <MdOutlineKeyboardArrowRight size={20} />
             </span>
           </div>
@@ -87,7 +87,7 @@ export default function Work() {
             GRAPHIC DESIGN
           </p>
           <div className="">
-            <span className="text-gray-200 flex  cursor-pointer viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 ">
+            <span className="text-gray-200 flex  cursor-pointer hover:text-red-500 viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 ">
               V I E W <MdOutlineKeyboardArrowRight size={20} />
             </span>
           </div>

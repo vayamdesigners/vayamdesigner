@@ -60,7 +60,7 @@ export default function Contact() {
           </Button>
         </form>
 
-        <div className=" mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+        <div className=" mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
           <div className="flex flex-col items-center text-center space-y-2">
             <div className="p-3 bg-white/10 rounded-full">
               <Mail className="h-6 w-6" />
@@ -82,17 +82,6 @@ export default function Contact() {
             >
               +91 850036976
             </a>
-          </div>
-
-          <div className="flex flex-col items-center text-center space-y-2">
-            <div className="p-3 bg-white/10 rounded-full">
-              <HelpCircle className="h-6 w-6" />
-            </div>
-            <h3 className="font-semibold">Support</h3>
-
-            <Button variant="outline" className="text-sm">
-              Support Center
-            </Button>
           </div>
         </div>
       </div>
