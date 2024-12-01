@@ -178,7 +178,16 @@ export default function Navbar({ isDivVisible }) {
       <div className="flex items-center">
         {!isDivVisible && (
           <Link href="/" className="text-4xl font-bold">
-            <img src="/l.png" className="h-[50px] " />
+            <img
+              src="/l.png"
+              className="h-[50px] "
+              data-aos="fade-in"
+              data-aos-delay="0"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="true"
+            />
           </Link>
         )}
       </div>

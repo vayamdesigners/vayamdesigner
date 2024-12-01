@@ -1,8 +1,10 @@
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { motion } from "motion/react";
+import { useRouter } from "next/router";
 
 export default function Work() {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-black pb-10   pt-28 text-white">
       <div className=" mt-5 ml-10 sm:ml-16 md:ml-40 lg:ml-64 flex items-center relative">
@@ -47,7 +49,12 @@ export default function Work() {
             PHOTOGRAPHY
           </p>
           <div className="">
-            <span className="text-gray-200 flex  cursor-pointer hover:text-red-500 viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 ">
+            <span
+              className="text-gray-200 flex  cursor-pointer hover:text-red-500 viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 "
+              onClick={() => {
+                router.push("/photographyWork");
+              }}
+            >
               V I E W <MdOutlineKeyboardArrowRight size={20} />
             </span>
           </div>
@@ -72,7 +79,12 @@ export default function Work() {
             VIDEOGRAPHY
           </p>
           <div className="">
-            <span className="text-gray-200 flex  cursor-pointer hover:text-red-500 viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 ">
+            <span
+              className="text-gray-200 flex  cursor-pointer hover:text-red-500 viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 "
+              onClick={() => {
+                router.push("/VideographyWork");
+              }}
+            >
               V I E W <MdOutlineKeyboardArrowRight size={20} />
             </span>
           </div>
@@ -87,7 +99,12 @@ export default function Work() {
             GRAPHIC DESIGN
           </p>
           <div className="">
-            <span className="text-gray-200 flex  cursor-pointer hover:text-red-500 viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 ">
+            <span
+              className="text-gray-200 flex  cursor-pointer hover:text-red-500 viewHeading  font-extralight text-sm  ml-2 sm:ml-12 md:ml-24 "
+              onClick={() => {
+                router.push("/GraphicDesignWork");
+              }}
+            >
               V I E W <MdOutlineKeyboardArrowRight size={20} />
             </span>
           </div>

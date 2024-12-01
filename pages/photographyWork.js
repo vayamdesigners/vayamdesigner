@@ -60,36 +60,7 @@ export default function PhotographyWork() {
         </h1>
         <ImageCarousel images={corporatePhotos} />
       </main>
-      <div className="flex flex-col sm:flex-row justify-between px-5 min-h-[40vh] my-10">
-        <div className="w-[100%] my-2 sm:w-[33%] sm:my-0 py-5 sm:py-0 border border-white flex justify-center items-center flex-col">
-          <IoCallOutline size={30} />
-          <h1 className="my-5 text-2xl">Phone</h1>
-          <span className="text-gray-300">+918520937627</span>
-        </div>
-        <div className="w-[100%] my-2 sm:w-[35%] sm:my-0 py-5 sm:py-0  border border-white flex justify-center items-center flex-col">
-          <MdOutlineMailOutline size={30} />
-          <h1 className="my-5 text-2xl">Email</h1>
-          <span className="text-gray-300">nithishreddygade@gmail.com</span>
-        </div>
-        <div className="w-[100%] my-2 sm:w-[33%] sm:my-0 py-5 sm:py-0  border border-white flex justify-center items-center flex-col">
-          <BiLike size={30} />
-          <h1 className="my-5 text-2xl">Connect</h1>
-          <div className="flex justify-center w-[50%] ">
-            <div className="mx-2">
-              <FaFacebookF color="white" size={15} />
-            </div>
-            <div className="mx-2">
-              <GrTwitter color="white" size={17} />
-            </div>
-            <div className="mx-2">
-              <FaLinkedin color="white" size={17} />
-            </div>
-            <div className="mx-2">
-              <FaInstagram color="white" size={17} />
-            </div>
-          </div>
-        </div>
-      </div>
+
       <main className="pt-10">
         <h1 className="text-[20px] mx-10   my-2 sm:text-[30px] sm:mx-16 sm:my-5 ">
           POTRAIT PHOTOGRAPHY

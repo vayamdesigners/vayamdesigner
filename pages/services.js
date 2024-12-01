@@ -6,7 +6,7 @@ export default function Services() {
   const router = useRouter();
   return (
     <div
-      className="bg-black text-white  pb-24  pt-28  min-w-[300px]"
+      className="bg-black text-white  pb-24  pt-28 px-10  overflow-hidden"
       style={{
         fontFamily: "Futura LT W01 Medium",
       }}
@@ -56,7 +56,16 @@ export default function Services() {
         </div>
         <div className="flex flex-col  md:flex-row-reverse justify-between pt-2">
           <div className=" md:w-[50%]">
-            <img src="/services/PHOTGRAPHYIMAGE.jpg" className="w-full" />
+            <img
+              src="/services/PHOTGRAPHYIMAGE.jpg"
+              className="w-full"
+              data-aos="fade-left"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="true"
+            />
           </div>
           <div className="w-[100%] md:w-[50%] flex px-3">
             <div className="w-[100%] md:w-[75%]  md:text-start mx-auto my-auto">
@@ -157,7 +166,16 @@ export default function Services() {
         </div>
         <div className="flex flex-col  md:flex-row justify-between pt-2">
           <div className=" md:w-[50%]">
-            <img src="/services/VIDEOGRAPHYIMAGE.png" className="w-full" />
+            <img
+              src="/services/VIDEOGRAPHYIMAGE.png"
+              className="w-full"
+              data-aos="fade-right"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="true"
+            />
           </div>
           <div className="w-[100%] md:w-[50%] flex px-3">
             <div className="w-[100%] md:w-[75%]  md:text-start mx-auto my-auto">
@@ -258,7 +276,16 @@ export default function Services() {
         </div>
         <div className="flex flex-col  md:flex-row-reverse justify-between pt-2">
           <div className=" md:w-[50%] mx-2">
-            <img src="/services/GRAPHICDESIGNIMAGE.png" className="w-full" />
+            <img
+              src="/services/GRAPHICDESIGNIMAGE.png"
+              className="w-full"
+              data-aos="fade-left"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="false"
+              data-aos-once="true"
+            />
           </div>
           <div className="w-[100%] md:w-[50%] flex px-3">
             <div className="w-[100%] md:w-[75%]  md:text-start mx-auto my-auto">

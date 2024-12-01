@@ -50,16 +50,18 @@ export default function About() {
             fontFamily: "Futura LT W01 Medium",
           }}
         >
-          <div className="mx-2">
-            <h1 className="text-lg sm:text-xl md:text-4xl lg:text-5xl">
-              Get to Know Us
-            </h1>
-            <p className="mx-2 mt-2 w-[100%] md:mt-10 md:w-[80%] text-justify md:text-justify text-lg text-gray-400">
-              We are a unique creative agency for all things visual and digital.
-              We specialize in graphic design, photography, and videography,
-              offering a wide range of services to meet the diverse needs of
-              businesses and individuals alike.
-            </p>
+          <div className="mx-2 flex items-center h-full">
+            <div>
+              <h1 className="text-lg sm:text-xl md:text-4xl lg:text-5xl">
+                Get to Know Us
+              </h1>
+              <p className="mx-2 mt-2 w-[100%] md:mt-10 md:w-[80%] text-justify md:text-justify text-lg text-gray-400">
+                We are a unique creative agency for all things visual and
+                digital. We specialize in graphic design, photography, and
+                videography, offering a wide range of services to meet the
+                diverse needs of businesses and individuals alike.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -98,10 +100,11 @@ export default function About() {
         </div>
         <div className="w-[100%] md:w-[50%] md:h-[75vh] ">
           <div className="flex justify-between">
+            {/**/}
             <div className="bg-white w-full mx-1  overflow-hidden cursor-pointer relative">
               <div className="bg-white relative group">
                 <img
-                  src="/companies/EVOLVESKILLS.png"
+                  src="/companies/TTPOC.jpeg"
                   alt="Bike"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -123,13 +126,12 @@ export default function About() {
                 </div>
               </div>
             </div>
-
-            <div className="bg-white w-full mx-1 h-full overflow-hidden cursor-pointer relative">
-              <div className="bg-white relative group h-full ">
+            <div className="bg-white w-full mx-1  overflow-hidden cursor-pointer relative">
+              <div className="bg-white relative group">
                 <img
-                  src="/companies/LNT7.png"
+                  src="/companies/NASSCOM.png"
                   alt="Bike"
-                  className="w-full h-full object-cover transition-transform duration-500 scale-150 mt-5 group-hover:scale-160"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gray-200 bg-opacity-50 transition-opacity duration-350 opacity-0 group-hover:opacity-100"></div>
 
@@ -149,11 +151,11 @@ export default function About() {
                 </div>
               </div>
             </div>
-
+            {/* */}
             <div className="bg-white w-full mx-1  overflow-hidden cursor-pointer relative">
               <div className="bg-white relative group">
                 <img
-                  src="/companies/NASSCOM.png"
+                  src="/companies/MRCE.jpg"
                   alt="Bike"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -180,7 +182,7 @@ export default function About() {
             <div className="bg-white w-full mx-1  overflow-hidden cursor-pointer relative">
               <div className="bg-white relative group">
                 <img
-                  src="/companies/MRCE.jpg"
+                  src="/companies/EVOLVESKILLS.png"
                   alt="Bike"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -202,12 +204,12 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="bg-white w-full mx-1  overflow-hidden cursor-pointer relative">
-              <div className="bg-white relative group">
+            <div className="bg-white w-full mx-1 h-full overflow-hidden cursor-pointer relative">
+              <div className="bg-white relative group h-full ">
                 <img
-                  src="/companies/TTPOC.jpeg"
+                  src="/companies/LNT7.png"
                   alt="Bike"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 scale-150 mt-5 group-hover:scale-160"
                 />
                 <div className="absolute inset-0 bg-gray-200 bg-opacity-50 transition-opacity duration-350 opacity-0 group-hover:opacity-100"></div>
 

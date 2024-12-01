@@ -7,6 +7,7 @@ export default function TextMaskVideo({ videoSrc, text, tracking }) {
           className={`${
             tracking == 10 ? "tracking-widest" : "tracking-normal"
           }`}
+          // className="tracking-[10px]"
         >
           {text}
         </h1>
