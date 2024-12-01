@@ -5,7 +5,7 @@ export default function NavigationNumbers() {
   const router = useRouter();
   return (
     <div
-      className="w-[100%] sm:px-24 md:px-36  lg:px-48 flex justify-between bg-black py-10 px-3"
+      className="w-[100%] pb-10 sm:px-24 md:px-36  lg:px-48 flex justify-between bg-black py-10 px-3"
       style={{ fontFamily: "futura-lt-w01-book, sans-serif;" }}
     >
       <div>
