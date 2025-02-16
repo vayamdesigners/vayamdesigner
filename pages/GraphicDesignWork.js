@@ -60,12 +60,12 @@ export default function GraphicDesignWork() {
         <ImageCarousel images={logoPhotos} />
       </main>
 
-      <main className="pt-10">
-        <h1 className="text-[20px] mx-10   my-2 sm:text-[30px] sm:mx-16 sm:my-5 ">
-          UI/UX
-        </h1>
-        <ImageCarousel images={potraitPhotos} />
-      </main>
+      // <main className="pt-10">
+      //   <h1 className="text-[20px] mx-10   my-2 sm:text-[30px] sm:mx-16 sm:my-5 ">
+      //     UI/UX
+      //   </h1>
+      //   <ImageCarousel images={potraitPhotos} />
+      // </main>
       <main className="pt-10">
         <h1 className="text-[20px] mx-10   my-2 sm:text-[30px] sm:mx-16 sm:my-5 ">
           PRINT DESIGN
